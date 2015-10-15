@@ -5,29 +5,35 @@
     {{> title}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" async>
     <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
     <div class="site-wrapper">
         <header class="site-header">
-            <div class="wrapper">
-                <h1 class="site-logo">
-                    <a class="site-home-link" href="/">Ze boilerplate</a>
+            <div class="container">
+                <h1 class="site-title">
+                    <a class="site-home-link" href="/">
+                        <img src="/assets/img/logo-white.png" alt="logo" class="site-logo" />
+                    </a>
                 </h1>
             </div>
         </header>
-        <div class="site-content wrapper">
+        <div class="site-content">
             {{{ body }}}
         </div>
         <footer class="site-footer">
-            <div class="wrapper">
+            <div class="container">
                 <p>
                     All rights reserved.
                 </p>
             </div>
         </footer>
     </div>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="/assets/scripts.js"></script>
 </body>
 </html>
