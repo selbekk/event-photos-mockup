@@ -1,0 +1,362 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300);
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.btn {
+  border-radius: 3px;
+}
+.btn.btn-primary {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+}
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+  background-color: #d62c1a;
+}
+.btn.btn-facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff;
+}
+.btn.btn-facebook:focus,
+.btn.btn-facebook:hover {
+  background-color: #2d4373;
+}
+.btn.btn-twitter {
+  background-color: #4099ff;
+  border-color: #4099ff;
+  color: #fff;
+}
+.btn.btn-twitter:focus,
+.btn.btn-twitter:hover {
+  background-color: #0d7eff;
+}
+.btn.btn-banner {
+  margin-top: 5rem;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.container {
+  max-width: 935px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.site-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: rgba(231, 76, 60, 0.9);
+  color: #e74c3c;
+  text-align: center;
+}
+.site-logo {
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+}
+.full-screen,
+.two-thirds-screen {
+  width: 100vw;
+  position: relative;
+  padding-top: 60px;
+}
+.full-screen {
+  height: 100vh;
+}
+.two-thirds-screen {
+  height: 66.7vh;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.background.mod-image {
+  z-index: 1;
+  background: no-repeat center center;
+  background-size: cover;
+}
+.background.mod-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.background.mod-content {
+  color: #fff;
+  z-index: 3;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dead-center {
+  margin: auto;
+  width: 100%;
+}
+.giant-heading {
+  font-size: 250%;
+  word-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+@media only screen and (min-width: 949px) {
+  .giant-heading {
+    font-size: 450%;
+  }
+}
+.large-heading {
+  font-size: 300%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+.container.mod-narrow {
+  max-width: 600px;
+}
+.more-arrow {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  bottom: 10px;
+  font-size: 300%;
+  text-align: center;
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+}
+.more-arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.more-arrow span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.inline-form input,
+.inline-form button,
+.inline-form .btn {
+  display: inline-block;
+}
+form.mod-transparent input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+}
+form.mod-transparent input:focus {
+  border-bottom: 3px solid #e74c3c;
+}
+form.mod-transparent ::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+form.mod-transparent ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f2f2f2;
+}
+form.mod-transparent :-ms-input-placeholder {
+  color: #f2f2f2;
+}
+form.mod-large input,
+form.mod-large button,
+form.mod-large .btn {
+  width: 100%;
+  font-size: 3rem;
+}
+.event-list {
+  list-style-type: none;
+}
+.event-list-item {
+  margin: 2rem 0 5rem;
+}
+.event-list-item a {
+  color: #222;
+}
+.event-list-image {
+  background: no-repeat center center;
+  background-size: cover;
+  min-height: 200px;
+}
+.center {
+  text-align: center;
+}
+.event-photos {
+  margin-top: 3rem;
+}
+.event-photo-list {
+  list-style-type: none;
+}
+.event-photo-list-item {
+  margin-bottom: 30px;
+  transition: width 0.5s ease-out;
+}
+.event-photo-list-item-photo {
+  background: no-repeat center center;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 90%;
+}
+.camera-button {
+  background-color: rgba(231, 76, 60, 0.9);
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2em;
+  height: 2em;
+  color: #fff;
+  font-size: 4rem;
+}
+.camera-button span {
+  position: relative;
+  top: 5px;
+}
+.email-signup {
+  margin-top: 2rem;
+}
+.email-signup a {
+  color: #fff;
+}
