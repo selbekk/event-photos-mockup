@@ -187,10 +187,52 @@ body {
   color: #e74c3c;
   text-align: center;
 }
+.site-title {
+  display: inline-block;
+}
 .site-logo {
   margin: 10px 0;
   width: 40px;
   height: 40px;
+}
+.site-header-container {
+  position: relative;
+}
+.header-icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 3rem;
+  color: #fff;
+  transition: right 0.1s ease-out;
+}
+.header-icon:hover {
+  color: #fff;
+  right: -5px;
+  padding-left: 5px;
+}
+.site-footer {
+  background: #444;
+  color: #fff;
+}
+.top-footer {
+  padding: 3rem 0;
+}
+.bottom-footer {
+  padding: 1rem 0;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+.footer-logo {
+  width: 50%;
+  float: right;
+}
+.footer-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .full-screen,
 .two-thirds-screen {
@@ -358,5 +400,11 @@ form.mod-large .btn {
   margin-top: 2rem;
 }
 .email-signup a {
+  color: #fff;
+}
+.link-list {
+  list-style-type: none;
+}
+.link-list a {
   color: #fff;
 }
