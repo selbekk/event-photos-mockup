@@ -20,6 +20,8 @@ app.get('/explore', (req, res) => res.render('explore'));
 app.get('/create', (req, res) => res.render('create'));
 app.get('/event/:id', (req, res) => res.render('event'));
 app.get('/upload', (req, res) => res.render('upload'));
+app.get('/sign-in', (req, res) => res.render('sign-in'));
+
 // Error handling
 
 // Start server

@@ -168,6 +168,10 @@ html {
   padding-left: 3em;
   padding-right: 3em;
 }
+.btn.btn-wide {
+  padding-left: 3em;
+  padding-right: 3em;
+}
 .container {
   max-width: 935px;
 }
@@ -407,4 +411,15 @@ form.mod-large .btn {
 }
 .link-list a {
   color: #fff;
+}
+.box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.sign-in-form {
+  max-width: 200px;
+  margin: 3rem auto 0;
+}
+.sign-in-input {
+  margin-bottom: 3px;
 }
